@@ -1,0 +1,68 @@
+@keyframes top-nav {
+  0%   {
+    transform: rotate(0deg);
+    transform-origin: right;
+   }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: right;
+    }
+}
+@keyframes top-nav-rev {
+  0%   {
+    transform: rotate(-45deg);
+    transform-origin: right;
+   }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: right;
+    }
+}
+@keyframes middle-nav {
+  0%   {
+    position: relative;
+    right:0;
+    opacity: 1;
+   }
+  100% {
+    position: relative;
+    right:100px;
+    opacity: 0;
+    }
+}
+@keyframes middle-nav-reverse {
+  0%   {
+    position: relative;
+    right:100px;
+    opacity: 0;
+   }
+  100% {
+    position: relative;
+    right:0;
+    opacity: 1;
+    }
+}
+@keyframes bottom-nav {
+  0%   {
+    transform: rotate(0deg);
+    transform-origin: right;
+    width: 20px;
+   }
+  100% {
+    transform: rotate(42deg);
+    transform-origin: right;
+    width: 30px;
+    }
+}
+@keyframes bottom-nav-rev {
+  0%   {
+    transform: rotate(42deg);
+    transform-origin: right;
+    width: 30px;
+   }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: right;
+    width: 20px;
+    }
+}
