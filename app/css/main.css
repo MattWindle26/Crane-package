@@ -135,6 +135,11 @@ p, a, li, b {
   margin-right: 10px;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .header-items .nav-trigger {
+    display: none;
+  }
+}
 .header-items .nav-trigger img {
   width: 25px;
   height: auto;
@@ -168,10 +173,49 @@ p, a, li, b {
   padding: 50px 0 0 10px;
   transition: all 0.5s ease;
 }
+@media (min-width: 1024px) {
+  .header-items .nav-bar {
+    position: relative;
+    top: 0;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .header-items .nav-bar ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    list-style-type: none;
+  }
+}
+.header-items .nav-bar ul li a {
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+  width: 95%;
+}
+.header-items .nav-bar ul li a:after {
+  content: "";
+}
 .header-items .nav-bar.active {
   top: 0;
 }
-.header-items .nav-bar img {
+.header-items .nav-bar img.close {
   width: 18px;
   height: auto;
   position: fixed;
@@ -180,26 +224,22 @@ p, a, li, b {
   opacity: 0;
   transition: all 0.5s ease 0.25s;
 }
-.header-items .nav-bar img.show {
+.header-items .nav-bar img.close.show {
   opacity: 1;
-}
-.header-items .nav-bar a {
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-  color: #fff;
-  width: 90%;
-}
-.header-items .nav-bar a:after {
-  content: "";
 }
 .header-items .nav-bar .has-dropdown {
   position: relative;
+}
+.header-items .nav-bar .has-dropdown span img {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
 }
 .header-items .nav-bar .dropdown {
   list-style-type: none;
   margin-left: 15px;
   display: none;
+  width: 100%;
 }
 .header-items .logo {
   width: auto;

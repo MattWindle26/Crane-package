@@ -7,6 +7,9 @@
   padding: 10px;
   .nav-trigger{
     margin-right: 10px;
+    @media #{$laptop}{
+      display: none;
+    }
     img{
       width: 25px;
       height: auto;
@@ -26,10 +29,34 @@
     width: 100%;
     padding: 50px 0 0 10px;
     transition: all 0.5s ease;
+    @media #{$laptop}{
+      position: relative;
+      top: 0;
+      height: auto;
+    }
+    ul{
+      @media #{$laptop}{
+        @include display(flex);
+        @include flex-direction(row);
+        list-style-type: none;
+      }
+      li{
+        a{
+          text-decoration: none;
+          padding: 10px;
+          display: inline-block;
+          color: $white;
+          width: 95%;
+          &:after{
+            content: "";
+          }
+        }
+      }
+    }
     &.active{
       top: 0;
     }
-    img{
+    img.close{
       width: 18px;
       height: auto;
       position: fixed;
@@ -41,24 +68,21 @@
         opacity: 1;
       }
     }
-    a{
-      text-decoration: none;
-      padding: 10px;
-      display: inline-block;
-      color: $white;
-      width: 90%;
-      &:after{
-        content: "";
-      }
-    }
-
     .has-dropdown{
       position: relative;
+      span{
+        img{
+          width: 10px;
+          height: 10px;
+          transform: rotate(-45deg);
+        }
+      }
     }
     .dropdown{
       list-style-type: none;
       margin-left: 15px;
       display: none;
+      width: 100%;
     }
   }
   .logo{
