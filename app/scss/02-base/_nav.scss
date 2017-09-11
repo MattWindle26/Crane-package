@@ -1,5 +1,53 @@
-.header-items{
+.btn{
   background-color: $primaryColor;
+  color: $white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display:inline-block;
+  &.contact{
+    margin: 0 auto 15px auto;
+    @media #{$tablet}{
+      margin: 0 0 0 20px;
+    }
+  }
+}
+.top-header{
+  width: 100%;
+  background-color: darken($grey,10%);
+  padding: 10px;
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+  @media #{$tablet}{
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+  .header-contact{
+    padding-bottom: 10px;
+    @media #{$tablet}{
+      margin: 0 60px 0 0;
+    }
+    p{
+      @include display(flex);
+      @include align-items(center);
+      @include justify-content(center);
+      margin-bottom: 10px;
+      @media #{$tablet}{
+        @include justify-content(flex-start);
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      img{
+        width: auto;
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.header-items{
+  background-color: $grey;
   @include display(flex);
   @include align-items(center);
   @include flex-direction(row);
@@ -17,7 +65,7 @@
     position: relative;
   }
   .nav-bar{
-    background-color: $primaryColor;
+    background-color: $grey;
     font-family: $primaryFont;
     margin-right: 50px;
     @include display(flex);
@@ -47,7 +95,7 @@
           text-decoration: none;
           padding: 10px;
           display: inline-block;
-          color: $white;
+          color: $black;
           width: 90%;
         }
       }
@@ -59,12 +107,13 @@
       width: 18px;
       height: auto;
       position: fixed;
-      top: 30px;
+      top: -250px;
       right: 25px;
       opacity: 0;
       transition: all 0.5s ease 0.25s;
       &.show{
         opacity: 1;
+        top: 30px;
       }
     }
     .has-dropdown{
@@ -91,7 +140,7 @@
       margin-left: 15px;
       display: none;
       width: 100%;
-      background-color: darken($primaryColor,10%);
+      background-color: darken($grey,10%);
       box-shadow: 0 3px 6px rgba(0,0,0,0.16);
       @media #{$tablet}{
         position: absolute;

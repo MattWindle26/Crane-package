@@ -26,8 +26,9 @@ p, a, li, b {
 }
 
 .home h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
+  margin: 15px;
 }
 .home nav {
   display: -webkit-box;
@@ -52,7 +53,9 @@ p, a, li, b {
   text-decoration: none;
   line-height: 1.5;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 18px;
+  display: inline-block;
+  color: #000;
 }
 
 @keyframes top-nav {
@@ -123,8 +126,136 @@ p, a, li, b {
     width: 20px;
   }
 }
-.header-items {
+.btn {
   background-color: #139DD9;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.btn.contact {
+  margin: 0 auto 15px auto;
+}
+@media (min-width: 768px) {
+  .btn.contact {
+    margin: 0 0 0 20px;
+  }
+}
+
+.top-header {
+  width: 100%;
+  background-color: #d5d5d5;
+  padding: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+@media (min-width: 768px) {
+  .top-header {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+  }
+}
+.top-header .header-contact {
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .top-header .header-contact {
+    margin: 0 60px 0 0;
+  }
+}
+.top-header .header-contact p {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .top-header .header-contact p {
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: start;
+  }
+}
+.top-header .header-contact p:last-child {
+  margin-bottom: 0;
+}
+.top-header .header-contact p img {
+  width: auto;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.header-items {
+  background-color: #eee;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -176,7 +307,7 @@ p, a, li, b {
   height: auto;
 }
 .header-items .nav-bar {
-  background-color: #139DD9;
+  background-color: #eee;
   font-family: "Open Sans";
   margin-right: 50px;
   display: -webkit-box;
@@ -239,7 +370,7 @@ p, a, li, b {
   text-decoration: none;
   padding: 10px;
   display: inline-block;
-  color: #fff;
+  color: #000;
   width: 90%;
 }
 .header-items .nav-bar.active {
@@ -249,13 +380,14 @@ p, a, li, b {
   width: 18px;
   height: auto;
   position: fixed;
-  top: 30px;
+  top: -250px;
   right: 25px;
   opacity: 0;
   transition: all 0.5s ease 0.25s;
 }
 .header-items .nav-bar img.close.show {
   opacity: 1;
+  top: 30px;
 }
 .header-items .nav-bar .has-dropdown {
   position: relative;
@@ -298,7 +430,7 @@ p, a, li, b {
   margin-left: 15px;
   display: none;
   width: 100%;
-  background-color: #0f7baa;
+  background-color: #d5d5d5;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 768px) {

@@ -1,7 +1,7 @@
 <?php include 'includes/header.php' ?>
 
 <div class="header-items" >
-  <a href="/" ><img src="/images/crane-images/logo.png" class="logo" ></a>
+  <a href="/" ><img src="/images/crane-images/logo.svg" class="logo" ></a>
   <div class="nav-trigger">
     <img src="/images/crane-images/menu.svg" >
   </div>
