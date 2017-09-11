@@ -209,7 +209,7 @@ p, a, li, b {
   padding: 10px;
   display: inline-block;
   color: #fff;
-  width: 95%;
+  width: 90%;
 }
 .header-items .nav-bar.active {
   top: 0;
@@ -267,14 +267,18 @@ p, a, li, b {
   margin-left: 15px;
   display: none;
   width: 100%;
+  background-color: #0f7baa;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 @media (min-width: 768px) {
   .header-items .nav-bar .dropdown {
     position: absolute;
     top: 45px;
     left: -10px;
-    background-color: #0f7baa;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    min-width: 160%;
+  }
+  .header-items .nav-bar .dropdown a {
+    line-height: 1.5;
   }
 }
 .header-items .logo {

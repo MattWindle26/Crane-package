@@ -48,7 +48,7 @@
           padding: 10px;
           display: inline-block;
           color: $white;
-          width: 95%;
+          width: 90%;
         }
       }
     }
@@ -91,12 +91,16 @@
       margin-left: 15px;
       display: none;
       width: 100%;
+      background-color: darken($primaryColor,10%);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
       @media #{$tablet}{
         position: absolute;
         top: 45px;
         left: -10px;
-        background-color: darken($primaryColor,10%);
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16)
+        min-width: 160%;
+        a{
+          line-height: 1.5;
+        }
       }
     }
   }

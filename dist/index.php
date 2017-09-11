@@ -2,7 +2,9 @@
 
 <div class="header-items" >
   <img src="/images/crane-images/logo.png" class="logo" >
-  <div class="nav-trigger"> <img src="/images/crane-images/menu.svg" ></div>
+  <div class="nav-trigger">
+    <img src="/images/crane-images/menu.svg" >
+  </div>
   <nav class="nav-bar">
     <img class="close" src="/images/crane-images/close.svg" >
     <ul>
