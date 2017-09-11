@@ -451,7 +451,7 @@ p, a, li, b {
 }
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), url(/images/crane-images/banner.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45)), url(/images/crane-images/banner.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -493,6 +493,10 @@ header.centered {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
+}
+header.centered .logo {
+  width: 100%;
+  max-width: 350px;
 }
 header h1 {
   color: #fff;
