@@ -3,8 +3,8 @@
 <div class="top-header" >
   <a href="#" class="btn contact">Book now</a>
   <div class="header-contact" >
-    <p><img src="/images/crane-images/phone.svg" class="logo" > 0161 927 391 </p>
-    <p><img src="/images/crane-images/email.svg" class="logo" > info@physio123.co.uk </p>
+    <p><img src="/images/crane-images/phone.svg" class="phone icon" > 0161 927 391 </p>
+    <p><img src="/images/crane-images/email.svg" class="email logo" > info@physio123.co.uk </p>
   </div>
 </div>
 <div class="header-items" >
