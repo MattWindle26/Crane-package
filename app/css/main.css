@@ -427,7 +427,6 @@ p, a, li, b {
 }
 .header-items .nav-bar .dropdown {
   list-style-type: none;
-  margin-left: 15px;
   display: none;
   width: 100%;
   background-color: #d5d5d5;
@@ -435,6 +434,7 @@ p, a, li, b {
 }
 @media (min-width: 768px) {
   .header-items .nav-bar .dropdown {
+    margin-left: 15px;
     position: absolute;
     top: 45px;
     left: -10px;
