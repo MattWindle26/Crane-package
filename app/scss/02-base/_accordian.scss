@@ -1,0 +1,51 @@
+
+.accordion{
+  margin: 25px 0;
+  font-family:sans-serif;
+}
+
+.accordion__item__title{
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid $grey;
+  background-color: darken($grey,5%);
+  padding: 20px;
+  h3{
+    color: $black;
+    font-size: em(16);
+    line-height: 1.7em;
+    font-weight: 400;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-image: url('http://i.cubeupload.com/4xIzgj.png');
+    background-size: 15px 10px;
+    height:10px;
+    width: 15px;
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-right: 20px;
+  }
+}
+
+.accordion__item__content{
+  display: none;
+  padding: 20px;
+  background-color: darken($grey, 30%);
+  p{
+    color:$black;
+    line-height:1.7em;
+  }
+}
+
+.accordion-active{
+  .accordion__item__title{
+    &:after{
+      transform: rotate(180deg);
+    }
+  }
+}
