@@ -1,0 +1,96 @@
+.jumps-wrapper{
+  padding: 20px;
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  @media #{$small-tablet}{
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+  }
+  @media #{$laptop}{
+    @include flex-wrap(nowrap);
+  }
+  .single-jump{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 0 20px 0;
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    } // end of single-jump img
+    .jump-content{
+      padding: 20px 15px;
+      background-color: $grey;
+      max-width: 350px;
+      width: 100%;
+      h3{
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    @media #{$small-tablet}{
+      max-width: 260px;
+      margin: 0 10px 20px 10px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      &:last-child{
+        max-width: 750px;
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(center);
+        .jump-content{
+          height: auto;
+          max-width: 270px;
+        }
+        img{
+          width: 100%;
+          max-width: 270px;
+          height: 100%;
+        }
+      } // end of last child
+    } // end of small tablet query
+    @media #{$tablet}{
+      max-width: 340px;
+      margin: 0 10px 20px 10px;
+      &:last-child{
+        .jump-content{
+          height: auto;
+          max-width: 350px;
+        }
+        img{
+          width: 100%;
+          max-width: 350px;
+        }
+      } // end of last child
+    } // end of tablet query
+    @media #{$laptop}{
+      max-width: 260px;
+      margin: 0 10px 20px 10px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      &:last-child{
+        max-width: 260px;
+        @include display(flex);
+        @include flex-direction(column);
+        @include justify-content(center);
+        .jump-content{
+          height: auto;
+          max-width: 260px;
+        }
+        img{
+          width: 100%;
+          max-width: 260px;
+          height: 100%;
+        }
+      } // end of last child
+    } // end of laptop query
+  } // end of single-jump
+}

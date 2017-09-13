@@ -6,9 +6,20 @@
   box-sizing: border-box;
   font-family: $primaryFont;
 }
-
+h1,h2,h3{
+  margin-bottom: 10px;
+}
 p,a,li,b{
   font-size: 16px;
+}
+h1{
+  font-size: 42px;
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 20px;
 }
 a{
   text-decoration: none;
@@ -16,4 +27,35 @@ a{
 .container{
   max-width: 1280px;
   margin: 10px auto;
+}
+
+.main-container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  @media #{$tablet}{
+    @include display(flex);
+    @include flex-direction(row);
+  }
+  main{
+    width: 100%;
+    @media #{$tablet}{
+      width: 70%;
+      margin-right: 20px;
+    }
+    p{
+      line-height: 1.75;
+    }
+  }
+  aside{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-color: $grey;
+    margin-top: 20px;
+    @media #{$tablet}{
+      width: 30%;
+    }
+  }
 }
