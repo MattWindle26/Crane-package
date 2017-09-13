@@ -1,4 +1,7 @@
-<?php include 'includes/header.php' ?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php include $path . '/includes/header.php' ?>
 
 <div class="top-header" >
   <a href="#" class="btn contact">Book now</a>
@@ -17,11 +20,19 @@
     <ul>
       <li><a href="#" >Home</a></li>
       <li><a href="#" >About</a></li>
-      <li ><a href="#">Conditions </a></li>
+      <li class="has-dropdown" >
+        <a href="#">Conditions </a><span><img src="/images/crane-images/close.svg" ></span>
+        <ul class="dropdown">
+          <li><a href="#" >Home</a></li>
+          <li><a href="#" >Home</a></li>
+          <li><a href="#" >Home</a></li>
+          <li><a href="#" >Home</a></li>
+        </ul>
+      </li>
       <li><a href="#" >Services</a></li>
       <li><a href="#" >Book</a></li>
       <li><a href="#" >Contact</a></li>
   </nav>
 </div>
 
-<?php include 'includes/footer.php' ?>
+<?php include $path . '/includes/footer.php' ?>

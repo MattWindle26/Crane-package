@@ -1,4 +1,7 @@
-<?php include 'includes/header.php' ?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php include $path . '/includes/header.php' ?>
 <main class="container">
 <div class="accordion">
   <div class="accordion__item">
@@ -24,4 +27,4 @@
 </div>
 <main>
 
-<?php include 'includes/footer.php' ?>
+<?php include $path . '/includes/footer.php' ?>

@@ -1,4 +1,19 @@
-<?php include 'includes/header.php' ?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php include $path . '/includes/header.php' ?>
 
 <header class="side-section">
   <a href="#" >
@@ -12,4 +27,4 @@
 </a>
 </header>
 
-<?php include 'includes/footer.php' ?>
+<?php include $path . '/includes/footer.php' ?>

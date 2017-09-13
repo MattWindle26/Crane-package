@@ -1,5 +1,15 @@
-<?php include 'includes/header.php' ?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php include $path . '/includes/header.php' ?>
 
+<div class="top-header" >
+  <a href="#" class="btn contact">Book now</a>
+  <div class="header-contact" >
+    <p><img src="/images/crane-images/phone.svg" class="phone icon" > 0161 927 391 </p>
+    <p><img src="/images/crane-images/email.svg" class="email logo" > info@physio123.co.uk </p>
+  </div>
+</div>
 <div class="header-items" >
   <a href="/" ><img src="/images/crane-images/logo.svg" class="logo" ></a>
   <div class="nav-trigger">
@@ -17,4 +27,4 @@
   </nav>
 </div>
 
-<?php include 'includes/footer.php' ?>
+<?php include $path . '/includes/footer.php' ?>

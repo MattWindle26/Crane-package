@@ -1,10 +1,13 @@
-<?php include 'includes/header.php' ?>
+<?php
+$path = $_SERVER['DOCUMENT_ROOT'];
+?>
+<?php include $path . '/includes/header.php' ?>
 
 <header class="centered">
   <div class="header-items" >
     <a href="/" ><img src="/images/crane-images/logo-white.svg" class="logo" ></a>
     <div class="nav-trigger">
-      <img src="/images/crane-images/menu.svg" >
+      <img src="/images/crane-images/menu-white.svg" >
     </div>
     <nav class="nav-bar">
       <img class="close" src="/images/crane-images/close.svg" >
@@ -20,4 +23,4 @@
   <img class="logo" src="/images/crane-images/logo-white.svg" alt="Company name logo">
 </header>
 
-<?php include 'includes/footer.php' ?>
+<?php include $path . '/includes/footer.php' ?>
