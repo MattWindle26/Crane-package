@@ -663,6 +663,7 @@ a {
   background-color: #eee;
   max-width: 350px;
   width: 100%;
+  position: relative;
 }
 .jumps-wrapper .single-jump .jump-content h3 {
   font-weight: 600;
@@ -676,6 +677,16 @@ a {
   margin-top: 20px;
   display: inline-block;
   border-radius: 5px;
+}
+.jumps-wrapper .single-jump .jump-content .jump-icon {
+  background-color: #139DD9;
+  padding: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  right: 20px;
 }
 @media (min-width: 600px) {
   .jumps-wrapper .single-jump {
