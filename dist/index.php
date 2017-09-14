@@ -21,6 +21,7 @@ $path = $_SERVER['DOCUMENT_ROOT'];
   <h2>Jumps</h2>
   <nav>
     <a href="/jumps/standard-jumps.php" >Jumps standard</a>
+    <a href="/jumps/standard-jumps-with-buttons.php" >Jumps standard with buttons</a>
   </nav>
   <h2>Sidebars</h2>
   <nav>
